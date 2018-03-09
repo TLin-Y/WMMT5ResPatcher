@@ -1,5 +1,5 @@
 # WMMT5 Resolution Patcher
-Special thanks to jackfuste from wsgf.org for the 2D\UI offsets.
+Special thanks to jackfuste from wsgf.org for the 2D\UI offsets\values.
 
 ## Changelog:
 
