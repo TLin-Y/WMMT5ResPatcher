@@ -16,6 +16,15 @@ namespace WMMT5_Resolution_Patcher
 
         private void buttonApply_Click(object sender, EventArgs e)
         {
+            Int64 fileSizeInBytes = new FileInfo(openFileDialog1.FileName).Length;
+            Int64 originalFileSize = 27366912;
+
+            if (fileSizeInBytes != originalFileSize)
+            {
+                MessageBox.Show("Invalid exe or you don't have Update 5 installed. Please install Update 5 to use this patcher.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception();
+            }       
+            
             try
             {
                 string dir = Path.GetDirectoryName(openFileDialog1.FileName);
