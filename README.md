@@ -3,10 +3,10 @@ Special thanks to jackfuste from wsgf.org for the 2D\UI offsets\values.
 
 ## Changelog:
 
-v1.02
+v1.0.0.2
 - Added a check for Update 5 exe (so people will stop trying to patch 1.0 WMMT5)
 
-v1.01
+v1.0.0.1
 - Fixed some resolutions incorrect UI size
 - Fixed FOV issue if patching from 21:9 to 16:9
 - Added 21:9 variant of 2560x1440 and 5120x2880 (your monitor\gpu may or may not supports this, works fine on my RX480 + LG 29UM68-P), if your monitor\gpu can handle it, 
