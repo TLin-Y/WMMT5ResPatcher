@@ -3,6 +3,9 @@ Special thanks to jackfuste from wsgf.org for the 2D\UI offsets\values.
 
 ## Changelog:
 
+v1.02
+- Added a check for Update 5 exe (so people will stop trying to patch 1.0 WMMT5)
+
 v1.01
 - Fixed some resolutions incorrect UI size
 - Fixed FOV issue if patching from 21:9 to 16:9
