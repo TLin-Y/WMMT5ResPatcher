@@ -30,7 +30,9 @@
         {
             this.buttonApply = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.comboBoxResolution = new System.Windows.Forms.ComboBox();
+            this.Xres = new System.Windows.Forms.TextBox();
+            this.Yres = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonApply
@@ -50,50 +52,37 @@
             this.openFileDialog1.InitialDirectory = "C:\\";
             this.openFileDialog1.Title = "Please choose your wmn5r.exe";
             // 
-            // comboBoxResolution
+            // Xres
             // 
-            this.comboBoxResolution.FormattingEnabled = true;
-            this.comboBoxResolution.Items.AddRange(new object[] {
-            "600x480",
-            "640x360",
-            "640x480",
-            "640x512",
-            "768x432",
-            "800x600",
-            "896x504",
-            "960x720",
-            "1024x576",
-            "1024x768",
-            "1152x648",
-            "1152x864",
-            "1280x720",
-            "1280x960",
-            "1280x1024",
-            "1440x1080",
-            "1600x900",
-            "1600x1200",
-            "1920x1080",
-            "1920x1440",
-            "2560x1080",
-            "2560x1440",
-            "2560x1920",
-            "3440x1440",
-            "3840x2160",
-            "5120x2160",
-            "5120x2880",
-            "6880x2880",
-            "7680x4320"});
-            this.comboBoxResolution.Location = new System.Drawing.Point(12, 15);
-            this.comboBoxResolution.Name = "comboBoxResolution";
-            this.comboBoxResolution.Size = new System.Drawing.Size(176, 21);
-            this.comboBoxResolution.TabIndex = 2;
+            this.Xres.Location = new System.Drawing.Point(12, 15);
+            this.Xres.Name = "Xres";
+            this.Xres.Size = new System.Drawing.Size(77, 20);
+            this.Xres.TabIndex = 2;
+            // 
+            // Yres
+            // 
+            this.Yres.Location = new System.Drawing.Point(113, 15);
+            this.Yres.Name = "Yres";
+            this.Yres.Size = new System.Drawing.Size(77, 20);
+            this.Yres.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(95, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(12, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "x";
             // 
             // ResPatcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 51);
-            this.Controls.Add(this.comboBoxResolution);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Yres);
+            this.Controls.Add(this.Xres);
             this.Controls.Add(this.buttonApply);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -102,13 +91,16 @@
             this.Text = "WMMT5 Resolution Patcher";
             this.TopMost = true;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button buttonApply;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ComboBox comboBoxResolution;
+        private System.Windows.Forms.TextBox Xres;
+        private System.Windows.Forms.TextBox Yres;
+        private System.Windows.Forms.Label label1;
     }
 }
 
